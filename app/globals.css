@@ -15,3 +15,25 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+
+/* Fonts variable */
+@layer utilities {
+  .black-96 {
+    @apply text-[96px] font-[900] leading-[88px];
+  }
+  .black-70 {
+    @apply text-[70px] font-[900] leading-[70px];
+  }
+  .black-60 {
+    @apply text-[60px] font-[900] leading-[60px];
+  }
+  .black-36 {
+    @apply text-[36px] font-[900] leading-[36px];
+  }
+  .light-22 {
+    @apply text-[22px] font-[300] leading-[32px];
+  }
+  .light-18 {
+    @apply text-[18px] font-[300] leading-[300];
+  }
+}
