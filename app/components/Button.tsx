@@ -1,14 +1,12 @@
 import React, { useState, createContext } from "react";
 import Image from "next/image";
-const ButtonContext = createContext();
+const ButtonContext = createContext<any>(null);
 export default function Button() {
   const [isOpen, setIsOpen] = useState<boolean>(true);
-  function handleOpen() {
-    setIsOpen((prev) => !prev);
-  }
+
   return (
-    <ButtonContext.Provider value={(isOpen, handleOpen)}>
-      <button onClick={handleOpen}>
+    <ButtonContext.Provider value={isOpen}>
+      <button onClick={() => setIsOpen((prev) => !prev)}>
         {isOpen ? (
           <div>
             <p>our location</p>
